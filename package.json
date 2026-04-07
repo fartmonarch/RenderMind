@@ -1,0 +1,14 @@
+{
+  "name": "rendermind",
+  "version": "1.0.0",
+  "description": "RenderMind: AI 智能前端助手平台",
+  "scripts": {
+    "dev": "cd frontend && pnpm run dev",
+    "server": "cd backend && pnpm run server",
+    "start:all": "concurrently \"pnpm run server\" \"pnpm run dev\"",
+    "install:all": "pnpm install && cd frontend && pnpm install && cd ../backend && pnpm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
